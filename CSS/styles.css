@@ -1,0 +1,130 @@
+/* basic css */
+
+body {
+  background-color: #527D9E;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  background-color: #ffffff;
+  color: #527D9E;
+  font-size: 60;
+}
+
+p {
+  color: #ffffff;
+  font-size: 20;
+}
+
+/*blurred images */
+
+.textWithBlurredBg{
+    width:200px;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:10px;
+  }
+
+  .textWithBlurredBg img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+
+  .textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+
+  .textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+  }
+
+  .textWithBlurredBg h3{
+    top:50%
+  }
+
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }
+
+/* grid layout */
+
+.grid-container {
+  background-color: #527D9E;
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Aries Taurus Gemini Cancer" "Leo Virgo Libra Scorpio" "Sagittarius Capricorn Aquarius Pisces";
+}
+
+.Aries { grid-area: Aries;
+text-align: center;
+padding: 30px;
+}
+
+.Taurus { grid-area: Taurus;
+text-align: center;
+padding: 30px;
+}
+
+.Gemini { grid-area: Gemini;
+text-align: center;
+padding: 30px;
+}
+
+.Cancer { grid-area: Cancer;
+text-align: center;
+padding: 30px;
+}
+
+.Leo { grid-area: Leo;
+text-align: center;
+padding: 30px;
+}
+
+.Virgo { grid-area: Virgo;
+text-align: center;
+padding: 30px;
+}
+
+.Libra { grid-area: Libra;
+text-align: center;
+padding: 30px;
+}
+
+.Scorpio { grid-area: Scorpio;
+text-align: center;
+padding: 30px;
+}
+
+.Sagittarius { grid-area: Sagittarius;
+text-align: center;
+padding: 30px;
+}
+
+.Capricorn { grid-area: Capricorn;
+text-align: center;
+padding: 30px;
+}
+
+.Aquarius { grid-area: Aquarius;
+text-align: center;
+padding: 30px;
+}
+
+.Pisces { grid-area: Pisces;
+text-align: center;
+padding: 30px;
+}
