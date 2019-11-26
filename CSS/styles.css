@@ -1,7 +1,6 @@
 /* basic css */
 
 body {
-  background-color: #527D9E;
   color: #ffffff;
 }
 
@@ -64,8 +63,6 @@ p {
 .grid-container {
   background-color: #527D9E;
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4fr;
   grid-template-areas: "Aries Taurus Gemini Cancer" "Leo Virgo Libra Scorpio" "Sagittarius Capricorn Aquarius Pisces";
 }
 
@@ -127,4 +124,14 @@ padding: 30px;
 .Pisces { grid-area: Pisces;
 text-align: center;
 padding: 30px;
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    grid-template-areas:
+      "head head head head"
+      "main main main main"
+      "side side side side"
+      "footer footer footer footer";
+  }
 }
