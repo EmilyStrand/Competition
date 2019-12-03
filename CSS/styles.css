@@ -1,20 +1,20 @@
 /* basic css */
 
 body {
-  background-color: #527D9E;
   color: #ffffff;
 }
 
 h1 {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #527D9E;
   font-size: 60;
 }
 
 p {
   color: #ffffff;
   font-size: 20;
+  text-align: center;
 }
 
 /*blurred images */
@@ -22,10 +22,10 @@ p {
 .textWithBlurredBg{
     width:200px;
     height:auto;
-    display:inline-block;
+    display:block;
     position:relative;
     transition:.3s;
-    margin:10px;
+    margin:10px auto;
   }
 
   .textWithBlurredBg img{
@@ -59,13 +59,12 @@ p {
     opacity:1;
   }
 
-/* grid layout, background color of blue is in this bit */
+/* grid layout (NB background color of blue is in this bit)*/
 
 .grid-container {
   background-color: #527D9E;
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4fr;
+  align: center;
   grid-template-areas: "Aries Taurus Gemini Cancer" "Leo Virgo Libra Scorpio" "Sagittarius Capricorn Aquarius Pisces";
 }
 
@@ -127,4 +126,14 @@ padding: 30px;
 .Pisces { grid-area: Pisces;
 text-align: center;
 padding: 30px;
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    grid-template-areas:
+      "head head head head"
+      "main main main main"
+      "side side side side"
+      "footer footer footer footer";
+  }
 }
