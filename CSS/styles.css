@@ -1,21 +1,4 @@
-/* basic css */
 
-body {
-  color: #ffffff;
-}
-
-h1 {
-  text-align: center;
-  background-color: white;
-  color: #527D9E;
-  font-size: 60;
-}
-
-p {
-  color: #ffffff;
-  font-size: 20;
-  text-align: center;
-}
 
 /*blurred images */
 
@@ -62,7 +45,6 @@ p {
 /* grid layout (NB background color of blue is in this bit)*/
 
 .grid-container {
-  background-color: #527D9E;
   display: flex;
   align: center;
   grid-template-areas: "Aries Taurus Gemini Cancer" "Leo Virgo Libra Scorpio" "Sagittarius Capricorn Aquarius Pisces";
