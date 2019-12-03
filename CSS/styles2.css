@@ -1,6 +1,7 @@
 .headline{
   text-align:center;
   color:white; 
+  font-family:'Courier New', Courier, monospace;
         }
 
 .container-fluid nav {
