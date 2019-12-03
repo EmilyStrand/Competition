@@ -1,10 +1,11 @@
 .headline{
   text-align:center;
-  color:white;
+  color:white; 
+  font-family:'Courier New', Courier, monospace;
         }
 
 .container-fluid nav {
-    margin-top: -4%;
+  margin-top: -4%;
 }
 
 body {
@@ -45,7 +46,7 @@ p{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .topnav a:hover {
