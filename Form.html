@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container-fluid">
+            <div class="col-sm-12 text-center">
+    <h1 class="headline">SUBSCRIBE TO YOUR DAILY HOROSCOPE </h1>
+    <nav>
+    <div class="topnav" id="myTopnav">
+    <a href="Opening page.html" class="active">Home</a>
+    <a href="Horoscopes.html">Your Horoscope</a>
+    <a href="form.html">Subscribe</a>
+     </div>
+     </nav>
+    </div>
+</div>
+    <div class="content">
+          <form name="myForm" action="subscribe.html" onsubmit="returnvalidateForm()" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="validationDefault01"></label>
+      </div>
+      <div class="col-75">
+            <input type="text" name="fname" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="validationDefault02"></label>
+      </div>
+      <div class="col-75">
+            <input type="text" name="lname" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="sign" name="sign"></label>
+      </div>
+      <div class="col-75">
+          <select id="sign" name="sign" placeholder="sign">
+            <option value="select">Select your Star Sign!</option>
+            <option value="aries">Aries</option>
+            <option value="leo">Leo</option>
+            <option value="cancer">Cancer</option>
+            <option value="pisces">Pisces</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="taurus">Taurus</option>
+             <option value="sagittarius">Sagittarius</option>
+            <option value="gemini">Gemini</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="validationDefaultEmail"></label>
+      </div>
+      <div class="col-75">
+            <input type="text" name="email" class="form-control" id="validationDefaultEmail" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" name=box type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+          </div>
+          </div>
+          </div>
+          <br>
+    <div class="row">
+            <input type="submit" button onclick="myFunction()"></button>
+            <script>
+            function myFunction() {
+          var x = document.forms["myForm"]["fname", "lname", "email"].value;
+          if (x == "") 
+            alert("All fields must be filled out!");
+            return false;
+
+        }            
+        </script>
+        </div>
+  </form>
+  <br>
+<a href="http://www.facebook.com" class="fa fa-facebook"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter"></a>
+<a href="http://www.instagram.com" class="fa fa-instagram"></a>
+</div>
+</body>
+</html>
